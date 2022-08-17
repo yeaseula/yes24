@@ -1,0 +1,484 @@
+@charset "utf-8";
+
+  
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul, li, ol {
+            list-style: none;
+        }
+
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        body {
+            background-color: #f8f8f8;
+        }
+
+       #top_wrap {
+            width: 100%;
+            background-color: #ffffff;
+            border-bottom: 2px solid #196ab3;
+        }
+
+
+        #header1 {
+            width: 100%;
+            height: 42px;
+            background-color: #196ab3;
+        }
+
+        #heder_top {
+            width: 1260px;
+            height: 42px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #header_top_left {
+            overflow: hidden;
+            width: 693px;
+            height: 42px;
+        }
+
+            #header_top_left > li {
+                width: 10%;
+                height: 42px;
+                line-height: 42px;
+                font-size: 13px;
+                text-align: center;
+            }
+
+                #header_top_left > li > a {
+                    color: #fff
+                }
+
+        /*오른쪽 ul*/
+
+        #header_top_right {
+            overflow: hidden;
+            width: 350px;
+            height: 42px;
+        }
+
+            #header_top_right > li {
+                width: 58.3px;
+                height: 42px;
+                line-height: 42px;
+                font-size: 11px;
+                text-align: center;
+            }
+
+                #header_top_right > li > a {
+                    color: #ddd;
+                }
+
+        #heder_top li {
+            float: left;
+        }
+
+        /*아래쪽 헤더2*/
+
+        #header2 {
+            width: 1260px;
+            height: 118px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+        }
+
+        #logo {
+            width: 200px;
+            height: 100px;
+            margin: 0 0 0 50px;
+        }
+
+            #logo > a > img {
+                width: 95%;
+                height: 100%;
+            }
+
+        /*검색창 전체 박스*/
+
+        #input_box {
+            width: 525px;
+            height: 42px;
+            margin: 0 0 0 15px;
+            display: flex;
+            border: 2px solid #064387;
+            background-color: white;
+        }
+
+            /*셀렉트*/
+
+            #input_box > #search {
+                width: 20%;
+                height: 38px;
+                border: none;
+            }
+
+            /*인풋 검색창*/
+
+            #input_box > #input {
+                width: 68%;
+                height: 37px;
+                border: none;
+            }
+
+            /*아이콘*/
+
+            #input_box > #search_icon {
+                width: 12.6%;
+                height: 38px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: #064387;
+                cursor: pointer;
+            }
+
+                #input_box > #search_icon > img {
+                    width: 54%;
+                    height: 80%;
+                }
+
+        /*세로 슬라이드*/
+
+        #vertical_slide {
+            width: 100px;
+            height: 28px;
+            margin: 0 0 0 20px;
+            overflow: hidden;
+        }
+
+            #vertical_slide > .vertical {
+                width: 100px;
+                height: 112px;
+            }
+
+                #vertical_slide > .vertical > li {
+                    width: 100px;
+                    height: 28px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                    #vertical_slide > .vertical > li > p {
+                        text-align: center;
+                        line-height: 28px;
+                        font-size: 12px;
+                        color: #666;
+                    }
+
+                    #vertical_slide > .vertical > li > img {
+                        width: 20px;
+                        height: 20px;
+                    }
+
+                    #vertical_slide > .vertical > li > p:hover {
+                        text-decoration: underline;
+                        font-weight: 600;
+                    }
+
+        /*가로 미니슬라이드*/
+        #header_slide {
+            width: 160px;
+            height: 115px;
+            margin: 0 0 0 240px;
+            overflow: hidden;
+            position: relative;
+        }
+
+            #header_slide > .header_slide_ul {
+                width: 640px;
+            }
+
+            #header_slide li {
+                width: 160px;
+                height: 115px;
+                float: left;
+            }
+
+                #header_slide li > img {
+                    width: 100%;
+                    height: 100%;
+                    cursor: pointer;
+                }
+
+            #header_slide > span {
+                position: absolute;
+                top: 85px;
+                font-size: 8px;
+                background-color: #fff;
+                border: 1px solid #939393;
+                cursor: pointer;
+            }
+
+
+        .header_slide_prev {
+            left: 85px;
+            padding: 0 2px;
+        }
+
+        .header_slide_next {
+            right: 5px;
+            padding: 0 2px;
+        }
+
+        /*상단 네비게이션*/
+        /*빠른분야 베스트 신상품 이벤트 바이백...*/
+        nav {
+            width: 1260px;
+            height: 40px;
+            display: flex;
+            justify-content: space-between;
+            margin: 0 auto;
+        }
+
+
+        .nav_left {
+            overflow: hidden;
+            width: 670px;
+            height: 40px;
+        }
+
+            .nav_left > li {
+                float: left;
+                width: 61px;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                font-size: 13px;
+            }
+
+                .nav_left > li:first-of-type {
+                    width: 98px;
+                    font-weight: 700;
+                    background-color: #064387;
+                }
+
+                    .nav_left > li:first-of-type a {
+                        color: #fff;
+                    }
+
+                .nav_left > li:not(:first-of-type) a {
+                    color: #064387;
+                    font-weight: 700;
+                }
+
+                .nav_left > li:nth-of-type(8) a {
+                    color: dimgrey;
+                    border-left: 1px solid #ddd;
+                    font-weight: 700;
+                    padding: 0 0 0 8px;
+                }
+
+                .nav_left > li:nth-of-type(9) a {
+                    color: dimgrey;
+                    font-weight: 700;
+                }
+
+                .nav_left > li:nth-of-type(10) a {
+                    color: dimgrey;
+                    font-weight: 700;
+                }
+
+
+        /*오른쪽 네비게이션 */
+
+        .nav_right {
+            overflow: hidden;
+            width: 500px;
+            height: 40px;
+        }
+
+            .nav_right > li {
+                float: right;
+                width: 14%;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                font-size: 12px;
+            }
+
+                .nav_right > li > a {
+                    color: dimgrey;
+                }
+
+                .nav_right > li:first-of-type {
+                    width: 19%
+                }
+
+                .nav_right > li:nth-of-type(2) {
+                    width: 19%
+                }
+
+
+
+
+
+        /*푸터*/
+
+        footer {
+            width: 100%;
+            height: 360px;
+            background-color: #ddd;
+        }
+
+        /*푸터 상단부분 박스, 아래 보더값 줘야 함..*/
+        #footer_top {
+            width: 100%;
+            height: 50px;
+            margin: 0 auto;
+            border-bottom: 1px solid #999;
+        }
+
+
+            #footer_top > ul {
+                width: 1260px;
+                height: 50px;
+                margin: 0 auto;
+                overflow: hidden;
+                text-align: center;
+            }
+
+                #footer_top > ul > li {
+                    float: left;
+                    width: 80px;
+                    height: 50px;
+                    line-height: 50px;
+                    font-size: 11px;
+                }
+
+                    #footer_top > ul > li:first-of-type {
+                        margin: 0 0 0 35px;
+                    }
+
+                    #footer_top > ul > li:nth-of-type(4) {
+                        width: 120px;
+                    }
+
+                    #footer_top > ul > li:nth-of-type(5) {
+                        width: 120px;
+                    }
+
+                    #footer_top > ul > li:nth-of-type(6) {
+                        width: 120px;
+                    }
+
+                    #footer_top > ul > li:last-of-type {
+                        width: 120px;
+                    }
+
+        /*셀렉트*/
+
+        #cor {
+            background-color: #ddd;
+            font-size: 11px;
+        }
+
+        /*가운데 푸터*/
+
+
+        /*로고*/
+
+        #footer_ul_box {
+            width: 1260px;
+            height: 155px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+        }
+
+            #footer_ul_box > .yes_logo2 {
+                width: 240px;
+                height: 155px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+                #footer_ul_box > .yes_logo2 > img {
+                    width: 76%;
+                    height: 75%;
+                    cursor: pointer;
+                }
+
+            /*예스이십사(주)*/
+
+            #footer_ul_box > .yes_infor {
+                width: 500px;
+                height: 155px;
+            }
+
+                #footer_ul_box > .yes_infor > ul > li:first-of-type {
+                    font-size: 16px;
+                    margin: 10px 0 0 0px;
+                    color: #989898;
+                }
+
+                #footer_ul_box > .yes_infor > ul > li {
+                    font-size: 12px;
+                    color: #666;
+                    margin: 4px 0 0 0px;
+                    cursor: pointer;
+                }
+
+            /*고객문의*/
+
+            #footer_ul_box > .customer {
+                width: 375px;
+                height: 155px;
+            }
+
+                #footer_ul_box > .customer > ul > li:first-of-type {
+                    font-size: 16px;
+                    margin: 10px 0 0 0px;
+                    color: #989898;
+                }
+
+                #footer_ul_box > .customer > ul > li {
+                    font-size: 12px;
+                    color: #666;
+                    margin: 4px 0 0 0px;
+                    cursor: pointer;
+                }
+
+            #footer_ul_box button {
+                margin: 8px 6px 0 0px;
+                border: none;
+                font-size: 11px;
+                padding: 3px 8px;
+                cursor: pointer;
+            }
+
+        /*상받은거*/
+
+        footer > #price {
+            width: 1260px;
+            height: 100px;
+            margin: 0 auto;
+        }
+
+            footer > #price > img {
+                width: 97%;
+                height: 99%;
+                cursor: pointer;
+            }
+
+        footer > p {
+            width: 1260px;
+            margin: 0 auto;
+            text-align: center;
+            font-size: 11px;
+            color: #555;
+            height: 45px;
+            line-height: 45px;
+        }

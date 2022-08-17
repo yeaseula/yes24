@@ -1,0 +1,923 @@
+﻿<!DOCTYPE html>
+
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>예스24</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+            crossorigin="anonymous"></script>
+
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/sub.css" rel="stylesheet">
+
+    <link href="css/reset.css" rel="stylesheet">
+
+
+    <!--에이젝스-->
+
+    <script src="js/sub_float_right.js"></script>
+
+    <script src="js/sub_togethermany.js"></script>
+    <script src="js/sub_togetherbooks.js"></script>
+    <script src="js/sub_tag.js"></script>
+    <script src="js/sub_author.js"></script>
+
+    <script src="js/sub_event.js"></script> <!--제이슨-->
+    <script src="js/sub_text.js"></script> <!--메모장-->
+    <!--오른쪽 디테일-->
+    <script src="js/sub_detail_right.js"></script>
+
+
+    <!--자바스크립트 제이쿼리-->
+
+    <script src="js/header_slide.js"></script>
+    <script src="js/sub_category.js"></script>
+    <script src="js/sub_promotion.js"></script>
+    <script src="js/sub_together_motion.js"></script>
+    <script src="js/sub_order.js"></script>
+
+    <script src="js/sub_top.js"></script>
+    
+
+</head>
+
+<body>
+
+    <div id="top_wrap">
+        <!--헤더 wrap-->
+
+        <header id="header1">
+            <div id="heder_top">
+                <ul id="header_top_left">
+                    <li><a href="sub.html" target="_self">국내도서</a></li>
+                    <li><a href="sub.html" target="_self">외국도서</a></li>
+                    <li><a href="sub.html" target="_self">eBook</a></li>
+                    <li><a href="sub.html" target="_self">웹소설</a></li>
+                    <li><a href="sub.html" target="_self">CD/LP</a></li>
+                    <li><a href="sub.html" target="_self">DVD</a></li>
+                    <li><a href="sub.html" target="_self">티켓</a></li>
+                    <li><a href="sub.html" target="_self">문구</a></li>
+                    <li><a href="sub.html" target="_self">중고샵</a></li>
+                    <li><a href="sub.html" target="_self">STYLE24</a></li>
+                </ul>
+
+                <ul id="header_top_right">
+                    <li><a href="sub.html" target="_self">로그인</a></li>
+                    <li><a href="sub.html" target="_self">회원가입</a></li>
+                    <li><a href="sub.html" target="_self">마이페이지</a></li>
+                    <li><a href="sub.html" target="_self">카트</a></li>
+                    <li><a href="sub.html" target="_self">주문/배송</a></li>
+                    <li><a href="sub.html" target="_self">고객센터</a></li>
+                </ul>
+            </div>
+
+        </header>
+
+        <header id="header2">
+
+            <div id="logo"><a href="index.html" target="_self"><img src="img/logo.jpg" alt="logo"></a></div>
+
+            <div id="input_box">
+                <select name="search" id="search">
+                    <option value="">통합검색</option>
+                    <option value="">국내도서</option>
+                    <option value="">외국도서</option>
+                    <option value="">eBook</option>
+                    <option value="">CD</option>
+                    <option value="">DVD</option>
+                    <option value="">웹소설</option>
+                    <option value="">티켓</option>
+                    <option value="">문구</option>
+                    <option value="">중고매장</option>
+                </select>
+                <input type="text" id="input"
+                    placeholder="  화제의 유튜브 '지식 브런치 '첫 출간">
+
+                <div id="search_icon"><img src="img/search.png" alt="search"></div>
+            </div>
+
+
+
+            <!--서치란 옆 실시간 검색어 슬라이딩 효과-->
+            <div id="vertical_slide">
+                <ul class="vertical">
+                    <li><p>단독 선출간</p><img src="img/vertical.png" alt="ver"></li>
+                    <li><p>영어독립</p><img src="img/vertical2.png" alt="ver2"></li>
+                    <li><p>식량위기</p><img src="img/vertical2.png" alt="ver3"></li>
+                    <li><p>크레마S</p><img src="img/vertical.png" alt="ver4"></li>
+                </ul>
+            </div>
+
+            <!--오른쪽 미니 슬라이드-->
+
+            <div id="header_slide">
+                <ul class="header_slide_ul">
+                    <li><img src="img/li_1.jpg" alt="li_1"></li>
+                    <li><img src="img/li_2.jpg" alt="li_2"></li>
+                    <li><img src="img/li_3.jpg" alt="li_3"></li>
+                    <li><img src="img/li_4.jpg" alt="li_4"></li>
+                </ul>
+                <span class="header_slide_prev">&lt;</span>
+                <span class="header_slide_next">&gt;</span>
+            </div>
+        </header>
+
+
+
+        <nav>
+            <ul class="nav_left">
+                <li><a href="sub.html" target="_self">빠른분야찾기</a></li>
+                <li><a href="sub.html" target="_self">베스트</a></li>
+                <li><a href="sub.html" target="_self">신상품</a></li>
+                <li><a href="sub.html" target="_self">이벤트</a></li>
+                <li><a href="sub.html" target="_self">바이백</a></li>
+                <li><a href="sub.html" target="_self">매장안내</a></li>
+                <li><a href="sub.html" target="_self">북클럽</a></li>
+                <li><a href="sub.html" target="_self">채널예스</a></li>
+                <li><a href="sub.html" target="_self">블로그</a></li>
+                <li><a href="sub.html" target="_self">예스펀딩</a></li>
+            </ul>
+
+            <ul class="nav_right">
+                <li><a href="sub.html" target="_self">예스베리굿즈</a></li>
+                <li><a href="sub.html" target="_self">만원이하도서</a></li>
+                <li><a href="sub.html" target="_self">추천도서</a></li>
+                <li><a href="sub.html" target="_self">기획코너</a></li>
+                <li><a href="sub.html" target="_self">대량/법인</a></li>
+            </ul>
+
+        </nav>
+
+    </div>
+
+    <div id="center_wrap">
+
+        <span id="up"><img src="img/arrow.png" title="up"></span>
+
+        <div id="center_top_wrap">
+            <!--100%넓이 설정-->
+            <div id="top_banner"><img src="img/subbanner.png" alt="sub"></div>
+
+            <div id="category">
+                <ul>
+                    <li>웰컴</li>
+                    <li>|</li>
+                    <li>
+                        국내도서<img src="img/vertical.png" alt="ver">
+                        <ul class="sub_ul_1">
+                            <li>국내도서</li>
+                            <li>외국도서</li>
+                            <li>eBook</li>
+                            <li>CD/LP</li>
+                            <li>DVD/Blu-ray</li>
+                            <li>문구/GIFT</li>
+                            <li>중고샵</li>
+                        </ul>
+                    </li>
+                    <li>|</li>
+                    <li>
+                        소설/시/희곡<img src="img/vertical.png" alt="ver">
+                        <ul class="sub_ul_2">
+                            <li>
+                                <div class="lis">
+                                    <ul>
+                                        <li>가정 살림</li>
+                                        <li>건강 취미</li>
+                                        <li>경제 경영</li>
+                                        <li>국어 외국어 사전</li>
+                                        <li>대학교재</li>
+                                        <li>만화/라이트노벨</li>
+                                        <li>사회 정치</li>
+                                    </ul>
+                                </div>
+                                <div class="lis">
+                                    <ul>
+                                        <li>소설/시/희곡</li>
+                                        <li>수험서 자격증</li>
+                                        <li>어린이</li>
+                                        <li>에세이</li>
+                                        <li>여행</li>
+                                        <li>역사</li>
+                                        <li>예술</li>
+                                    </ul>
+                                </div>
+                                <div class="lis">
+                                    <ul>
+                                        <li>유아</li>
+                                        <li>인문</li>
+                                        <li>인물</li>
+                                        <li>자기계발</li>
+                                        <li>자연과학</li>
+                                        <li>잡지</li>
+                                        <li>전집</li>
+                                    </ul>
+                                </div>
+                                <div class="lis">
+                                    <ul>
+                                        <li>종교</li>
+                                        <li>청소년</li>
+                                        <li>IT 모바일</li>
+                                        <li>초등참고서</li>
+                                        <li>중고등참고서</li>
+
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>|</li>
+                    <li>
+                        영미 장편소설<img src="img/vertical.png" alt="ver">
+                        <ul class="sub_ul_3">
+                            <li>영미 단편소설</li>
+                            <li>영미 장편소설</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="book_wrap">
+            <!--왼쪽 떠있는 박스-->
+            <div id="float_left">
+                <div class="left_box">
+                    <img src="img/sub_float_left1.jpg">
+                    <p>예스24현대카드<br>2만원 캐시백</p>
+                </div>
+
+                <div class="left_box">
+                    <p>슈퍼특가</p>
+                    <img src="img/sub_float_left2.jpg">
+                    <p>반투명 북마크</p>
+                    <p id="super">2,700원</p>
+                </div>
+
+                <div class="left_box">
+                    <img src="img/float_left3.jpg">
+                    <p>화제의 추천도서</p>
+                </div>
+            </div>
+            <!--가운데-->
+            <div id="book">
+                <!--책 판매 페이지-->
+                <div id="book_top">
+                    <div id="bookCover"><img src="img/review4.jpg"></div>
+                    <div id="bookInfor">
+                        <div id="title">
+                            <button>소득공제</button>
+                            <button>오늘의책</button>
+                            <h2>엿보는 마을</h2>
+                            <ul>
+                                <li>리사 주얼 저/안은주 역</li>
+                                <li>|</li>
+                                <li>한스미디어</li>
+                                <li>|</li>
+                                <li>2022년 5월 25일</li>
+                                <li>|</li>
+                                <li>원서:Watching You</li>
+                            </ul>
+                            <ul>
+                                <li><span>⭐⭐⭐⭐⭐</span>9.8</li>
+                                <li>회원리뷰(24건)</li>
+                                <li>|</li>
+                                <li>판매지수 2,680</li>
+                                <li><p>베스트</p>영미소설 37위</li>
+                                <li>|</li>
+                                <li>영미소설 top100 4주</li>
+                            </ul>
+                        </div>
+
+                        <div id="price">
+                            <div id="price_left">
+                                <table border="0">
+                                    <tr>
+                                        <td>정가</td>
+                                        <td>16,300원</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td_bold">판매가</td>
+                                        <td class="red"><span>14,670</span>원 (10% 할인)</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="td_bold">북클럽머니<br>최대혜택가</td>
+                                        <td><span>13,170</span>원</td>
+                                    </tr>
+                                    <tr>
+                                        <td>YES포인트</td>
+                                        <td>810원 (5% 적립)<br>5만원이상 구매 시 2천원 추가적립</td>
+                                    </tr>
+                                </table>
+                                <table border="0">
+                                    <tr>
+                                        <td>결제혜택</td>
+                                        <td>카드/간편결제 혜택 확인</td>
+                                    </tr>
+                                </table>
+                                <table border="0">
+                                    <tr>
+                                        <td>배송안내</td>
+                                        <td>서울특별시 영등포구 은행로 11</td>
+                                    </tr>
+
+                                </table>
+                                <div id="today_del">
+                                    <span>당일배송</span>
+                                    <span>오늘(7/8, 금)</span>
+                                    <span>도착예정</span>
+                                </div>
+                                <p>배송비:무료</p>
+                                <div id="box">
+                                    <div class="box2">중고상품<br>판매요청하기</div>
+                                    <div class="box2">이 상품을 팔기<br>매입가 6,600원</div>
+                                </div>
+                            </div>
+                            <div id="price_right">
+                                <h5>판매중</h5>
+                                <div id="count">
+                                    <span>수량</span>
+                                    <ul>
+                                        <li>-</li>
+                                        <li>0</li>
+                                        <li>+</li>
+                                    </ul>
+                                </div>
+                                <button>카트에 넣기</button>
+                                <button>바로구매</button>
+                                <ul>
+                                    <li>해외배송 가능</li>
+                                    <li>최저가 보상</li>
+                                    <li>문화소득공제 신청가능</li>
+                                </ul>
+                                <button>리스트에 넣기</button>
+                                <button>eBook 출간 알림신청</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--배너--><!--제이쿼리-->
+                <div id="book_promotion">
+                    <div id="bookpro_left">
+
+                        <ul>
+                            <li>여름은 오래 그곳에 남아</li>
+                            <li>데볼루션:어둠 속의 포식자</li>
+                            <li>잔을 기울이며 읽는 이야기</li>
+                            <li>7월의 얼리리더 주목 신간</li>
+                        </ul>
+
+                        <div class="pro_content"><img src="img/sub_promotion1.jpg"></div>
+                        <div class="pro_content2"><img src="img/sub_promotion2.jpg"></div> <!--none-->
+                        <div class="pro_content3"><img src="img/sub_promotion3.jpg"></div> <!--none-->
+                        <div class="pro_content4"><img src="img/sub_promotion4.jpg"></div> <!--none-->
+                    </div>
+
+                    <div id="bookpro_right">
+                        <img src="img/sub_ad.gif" alt="ad">
+                    </div>
+
+                </div>
+
+                <div id="together">
+                    <ul>
+                        <li>이 책을 구입하신 분들이 함께 산 책</li>
+                        <li>이 책을 구입하신 분들이 많이 산 책</li>
+                    </ul>
+                    <div id="together_books">
+                        <span class="counting">1/3</span>
+                        <ul>
+                            <li>
+                                <div class="together_box"></div>
+                                <div class="together_box"></div>
+                                <div class="together_box"></div>
+                                <div class="together_box"></div>
+                                <div class="together_box"></div>
+                                <div class="together_box"></div>
+                            </li>
+                            <li>
+                                <div class="together_box"></div>
+                                <div class="together_box"></div>
+                                <div class="together_box"></div>
+                                <div class="together_box"></div>
+                                <div class="together_box"></div>
+                                <div class="together_box"></div>
+                            </li>
+                            <li>
+                                <div class="together_box"></div>
+                                <div class="together_box"></div>
+                                <div class="together_box"></div>
+                                <div class="together_box"></div>
+                                <div class="together_box"></div>
+                                <div class="together_box"></div>
+                            </li>
+                        </ul>
+                        <span class="together_prev">&lt;</span>
+                        <span class="together_next">&gt;</span>
+                    </div>
+                    <div id="together_many">
+                        <!--display:none-->
+                        <span class="counting">1/3</span>
+                        <ul>
+                            <li>
+                                <div class="together_box2"></div>
+                                <div class="together_box2"></div>
+                                <div class="together_box2"></div>
+                                <div class="together_box2"></div>
+                                <div class="together_box2"></div>
+                                <div class="together_box2"></div>
+                            </li>
+                            <li>
+                                <div class="together_box2"></div>
+                                <div class="together_box2"></div>
+                                <div class="together_box2"></div>
+                                <div class="together_box2"></div>
+                                <div class="together_box2"></div>
+                                <div class="together_box2"></div>
+                            </li>
+                            <li>
+                                <div class="together_box2"></div>
+                                <div class="together_box2"></div>
+                                <div class="together_box2"></div>
+                                <div class="together_box2"></div>
+                                <div class="together_box2"></div>
+                                <div class="together_box2"></div>
+                            </li>
+                        </ul>
+                        <span class="together2_prev">&lt;</span>
+                        <span class="together2_next">&gt;</span>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!--오른쪽 떠있는 박스-->
+
+            <div id="float_right">
+                <div class="right_box"><img src="img/sub_float_right1.png"></div>
+
+                <div class="right_box">
+                    <ul>
+                        <li>마이 예스24</li>
+                        <li>최근 본 상품</li>
+                        <li>
+                            <div class="seen">
+                                <div class="seen2">
+                                    <!--display:none-->
+                                    <div class="seen2_text"></div>
+                                    <div class="empty"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>단독 판매</li>
+                    </ul>
+                </div>
+
+                <div class="right_box">
+                    <h4>미리읽자<br>출간 전 연재</h4>
+                </div>
+
+                <div class="right_box">
+                    <p>웹진채널예스</p>
+                    <img src="img/interview.jpg" alt="interview">
+                    <p>책읽아웃은유</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="fix">
+            <!--스크롤 내리면 고정-->
+            <div id="fix_wrap">
+                <ul>
+                    <li>도서정보</li>
+                    <li>리뷰/한줄평<span></span></li>
+                    <li>배송/반품/교환</li>
+                </ul>
+                <ul>
+                    <li>14,670원</li>
+                    <li><button>카트에 넣기</button></li>
+                    <li><button>바로구매</button></li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="book_detailWrap">
+            <!--도서 상세 정보-->
+
+            <div id="detail_left">
+                <!--왼쪽-->
+                <!--도서정보-->
+                <section id="detail_1">
+                    <h3>품목정보</h3>
+                    <table>
+                        <tr>
+                            <td>출간일</td>
+                            <td>2022년 05월 25일</td>
+                        </tr>
+                        <tr>
+                            <td>쪽수, 무게, 크기</td>
+                            <td>440쪽 | 538g | 140*210*21mm</td>
+                        </tr>
+                        <tr>
+                            <td>ISBN13</td>
+                            <td>	9791160078091</td>
+                        </tr>
+                        <tr>
+                            <td>ISBN10</td>
+                            <td>1160078092</td>
+                        </tr>
+                    </table>
+
+                    <h3>관련분류</h3>
+                    <h5>카테고리 분류</h5>
+                    <ul>
+                        <li>국내도서</li>
+                        <li>|</li>
+                        <li>소설/시/희곡</li>
+                        <li>|</li>
+                        <li>영미소설</li>
+                        <li>|</li>
+                        <li>영미 장편소설</li>
+                    </ul>
+                </section>
+
+                <section id="tag">
+                    <h3>이 상품의 태그</h3>
+                    <span>#추리/미스터리/스릴러</span>
+
+                    <div id="tag_box_wrap">
+                        <div class="tag_box"></div>
+                        <div class="tag_box"></div>
+                        <div class="tag_box"></div>
+                        <div class="tag_box"></div>
+                        <div class="tag_box"></div>
+                    </div>
+                    <p>검색 페이지에서 선택된 태그에 등록된 더 많은 상품을 확인해 보세요.</p>
+                    <span>전체보기</span>
+                </section>
+
+
+                <section id="event">
+                    <h3>이 상품의 이벤트</h3>
+                    <span>(4개)</span>
+                    <div id="event_box_wrap">
+                        <div class="event_box"></div>
+                        <div class="event_box"></div>
+                        <div class="event_box"></div>
+                        <div class="event_box"></div>
+                    </div>
+                </section>
+
+                <section id="card_news">
+                    <h3>상세 이미지</h3>
+
+                    <div id="card_img">
+                        <img src="img/card.jpg">
+                    </div>
+
+                    <h2>책소개</h2>
+                    <div id="contents"></div>
+
+                </section>
+
+                <section id="index"></section>
+
+                <section id="author">
+                    <h3>저자 소개</h3>
+                    <ul>
+                        <li>
+                            <h3>저:리사 주얼</h3>
+                            <button>관심작가 알림신청</button>
+                            <button>작가 파일</button>
+                        </li>
+                        <li>
+                            <div class="author_img"><img src="img/sub_author.jpg"></div>
+                            <div class="author_text"></div>
+                        </li>
+                        <li>
+                            <h3>작가의 다른 상품</h3>
+                            <div id="another_product">
+                                <div class="cover"></div>
+                                <div class="cover"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <h3>역:안은주</h3>
+                            <button>관심작가 알림신청</button>
+                            <button>작가 파일</button>
+                        </li>
+                        <li id="an"></li>
+                        <li>
+                            <h3>작가의 다른 상품</h3>
+                            <div id="another_product">
+                                <div class="cover"></div>
+                                <div class="cover"></div>
+                                <div class="cover"></div>
+                                <div class="cover"></div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div id="into_book"></div>
+                    <div id="story"></div>
+
+                </section>
+
+                <!--리뷰 한줄평-->
+                <section id="review">
+                    <h3>회원리뷰</h3>
+                    <p>매주 10건의 우수리뷰를 선정하여 YES포인트 3만원을 드립니다.</p>
+                    <p>3,000원 이상 구매 후 리뷰 작성 시 일반회원 300원, 마니아회원 600원의 YES포인트를 드립니다.</p>
+                    <p>CD/LP, DVD/Blu-ray, 패션 및 판매금지 상품, 예스24 앱스토어 상품 제외)</p>
+
+                    <div id="review_box">
+                        <ul>
+                            <li>전체 리뷰</li>
+                            <li>포토 리뷰</li>
+                            <li>스타블로거 리뷰</li>
+                        </ul>
+                        <div class="personal_review"></div>
+                        <div class="personal_review"></div>
+                        <div class="personal_review"></div>
+                        <div class="personal_review"></div>
+                        <div class="personal_review"></div>
+                        <div id="buttons">
+                            <ul>
+                                <li>&lt;</li>
+                                <li>1</li>
+                                <li>2</li>
+                                <li>3</li>
+                                <li>4</li>
+                                <li>5</li>
+                                <li>&gt;</li>
+                            </ul>
+                            <ul>
+                                <li><input type="checkbox">구매리뷰</li>
+                                <li>최근순</li>
+                                <li>|</li>
+                                <li>추천순</li>
+                                <li>|</li>
+                                <li>별점순</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div id="one_line">
+                        <h3>한줄평</h3>
+                        <p>1,000원 이상 구매 후 한줄평 작성 시 일반회원 50원, 마니아회원 100원의 YES포인트를 드립니다.</p>
+                        <p>(CD/LP, DVD/Blu-ray, 패션 및 판매금지 상품, 예스24 앱스토어 상품 제외)</p>
+                        <div id="in_box">
+                            <h5>평점</h5>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <span class="star">⭐</span>
+                            <p>작성 시 유의사항</p>
+                            <div id="input_wrap">
+                                <input type="text" id="input" placeholder="한글 기준 50자까지 작성가능">
+                                <button>등록</button>
+                            </div>
+                        </div>
+
+                        <div id="oneline_review_box">
+                            <div class="oneline_review">
+                                <span id="purchase">구매</span>
+                                <span class="starpoint">⭐⭐⭐⭐⭐</span>
+                                <p>이유는 사랑이라는 표제가 신선합니다.</p>
+                                <p>이 한줄평이 도움이 되었나요?</p>
+                            </div>
+                            <div class="oneline_review">
+                                <span class="starpoint">⭐⭐⭐⭐⭐</span>
+                                <p>의심에 의심을 거듭하게 만들면서 몰입감을 일으키는 책!</p>
+                                <p>이 한줄평이 도움이 되었나요?</p>
+                            </div>
+                        </div>
+
+                        <div id="buttons2">
+                            <ul>
+                                <li>&lt;</li>
+                                <li>1</li>
+                                <li>&gt;</li>
+                            </ul>
+                            <ul>
+                                <li><input type="checkbox">구매리뷰</li>
+                                <li>최근순</li>
+                                <li>|</li>
+                                <li>추천순</li>
+                                <li>|</li>
+                                <li>별점순</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </section>
+                <!--배송안내-->
+                <section id="delivery">
+                    <h3>배송/반품/교환 안내</h3>
+                    <h4>배송 안내</h4>
+                    <table>
+                        <tr>
+                            <td>배송 구분</td>
+                            <td>YES24 배송<br>배송비:무료배송</td>
+                        </tr>
+                        <tr>
+                            <td>포장 안내</td>
+                            <td id="package_infor"></td>
+                        </tr>
+                    </table>
+
+                    <h4>반품/교환 안내</h4>
+                    <table>
+                        <tr>
+                            <td>반품/교환 방법</td>
+                            <td id="change1"></td>
+                        </tr>
+                        <tr>
+                            <td>반품/교환 가능기간</td>
+                            <td id="change2"></td>
+                        </tr>
+                        <tr>
+                            <td>반품/교환 비용</td>
+                            <td id="change3"></td>
+                        </tr>
+                        <tr>
+                            <td>반품/교환 불가사유</td>
+                            <td id="change4"></td>
+                        </tr>
+                        <tr>
+                            <td>소비자 피해보상</td>
+                            <td id="change5"></td>
+                        </tr>
+                        <tr>
+                            <td>환불 지연에 따른 배상</td>
+                            <td id="change6"></td>
+                        </tr>
+                    </table>
+                </section>
+            </div>
+
+            <div id="detail_right">
+                <div id="best">
+                    <h3>이 분야 베스트셀러</h3>
+                    <span>더보기&gt;</span>
+                    <div id="best_box_wrap">
+                        <!--개별 박스들 묶어줌-->
+                        <div class="best_box">
+                            <!--이미지박스,텍스트박스로 나뉨-->
+                            <div class="best_img"></div>
+                            <div class="best_text"></div>
+                        </div>
+                        <div class="best_box">
+                            <div class="best_img"></div>
+                            <div class="best_text"></div>
+                        </div>
+                        <div class="best_box">
+                            <div class="best_img"></div>
+                            <div class="best_text"></div>
+                        </div>
+                        <div class="best_box">
+                            <div class="best_img"></div>
+                            <div class="best_text"></div>
+                        </div>
+                        <div class="best_box">
+                            <div class="best_img"></div>
+                            <div class="best_text"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="new">
+                    <h3>이 분야 신상품</h3>
+                    <span>더보기&gt;</span>
+                    <div id="new_box_wrap">
+                        <!--개별 박스들 묶어줌-->
+                        <div class="new_box">
+                            <!--이미지박스,텍스트박스로 나뉨-->
+                            <div class="new_img"></div>
+                            <div class="new_text"></div>
+                        </div>
+                        <div class="new_box">
+                            <div class="new_img"></div>
+                            <div class="new_text"></div>
+                        </div>
+                        <div class="new_box">
+                            <div class="new_img"></div>
+                            <div class="new_text"></div>
+                        </div>
+                        <div class="new_box">
+                            <div class="new_img"></div>
+                            <div class="new_text"></div>
+                        </div>
+                        <div class="new_box">
+                            <div class="new_img"></div>
+                            <div class="new_text"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="list">
+                    <h3>이 책의 원서/번역서</h3>
+                    <div id="list_box_wrap">
+                        <!--개별 박스들 묶어줌-->
+                        <div class="list_box">
+                            <!--이미지박스,텍스트박스로 나뉨-->
+                            <div class="list_img"></div>
+                            <div class="list_text"></div>
+                        </div>
+                        <div class="list_box">
+                            <div class="list_img"></div>
+                            <div class="list_text"></div>
+                        </div>
+                        <div class="list_box">
+                            <div class="list_img"></div>
+                            <div class="list_text"></div>
+                        </div>
+                        <div class="list_box">
+                            <div class="list_img"></div>
+                            <div class="list_text"></div>
+                        </div>
+                        <div class="list_box">
+                            <div class="list_img"></div>
+                            <div class="list_text"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--푸터-->
+
+    <footer>
+        <!--상단 한 줄-->
+        <div id="footer_top">
+            <ul>
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">인재채용</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">청소년보호정책</a></li>
+                <li><a href="#">도서홍보안내</a></li>
+                <li><a href="#">광고안내</a></li>
+                <li><a href="#">제휴안내</a></li>
+                <li><a href="#">복지제휴</a></li>
+                <li><a href="#">매장안내</a></li>
+                <li>이미지</li>
+                <li>
+                    <select name="corporation" id="cor">
+                        <option value="가족회사 소개">가족회사 소개</option>
+                        <option value="한세실업">한세실업</option>
+                        <option value="한세드림">한세드림</option>
+                        <option value="동아출판">동아출판</option>
+                        <option value="STYLE24">STYLE24</option>
+                    </select>
+                </li>
+            </ul>
+        </div>
+
+        <div id="footer_ul_box">
+            <div class="yes_logo2"><img src="img/bottom_logo.jpg" alt="b_logo"></div>
+
+            <div class="yes_infor">
+                <ul>
+                    <li>예스이십사(주)</li>
+                    <li>
+                        서울시 영등포구 은행로 11, 5층~6층(여의도동,일신빌딩)
+                    </li>
+                    <li>대표 : 김석환   개인정보보호책임자 : 권민석 yes24help@yes24.com</li>
+                    <li>사업자등록번호 : 229-81-37000   통신판매업신고 : 제 2005-02682호</li>
+                    <li>호스팅 서비스사업자 : 예스이십사(주)</li>
+                    <li>Copyright ⓒ YES24 Corp. All Rights Reserved.</li>
+                </ul>
+            </div>
+
+            <div class="customer">
+                <ul>
+                    <li>고객문의</li>
+                    <li>도서/음반 1544-3800</li>
+                    <li>티켓예매 1544-6399</li>
+                </ul>
+                <button>1:1문의하기</button>
+                <button>자주묻는 질문</button>
+                <button>상담시간 안내</button>
+            </div>
+        </div>
+
+        <div id="price"><img src="img/price1.jpg" alt="price"></div>
+
+        <p>소비자피해보상보험 서울보증보험고객님은 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에서 가입한 구매안전서비스를 이용하실 수 있습니다.</p>
+
+    </footer>
+
+    <script src="js/sub_float_right_motion.js"></script>
+    <script src="js/sub_scrollTop.js"></script>
+</body>
+</html>
